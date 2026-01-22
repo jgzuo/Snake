@@ -11,7 +11,7 @@
 
 经典贪吃蛇游戏复刻，流畅动画与精美设计
 
-[在线体验](https://jgzuo.github.io/snake/) · [关于](#关于) · [报告问题](../../issues)
+[在线体验](https://jgzuo.github.io/Snake/) · [关于](#关于) · [报告问题](../../issues)
 
 </div>
 
@@ -62,15 +62,15 @@
 ### 🚀 Quick Start
 
 #### Play Online
-Visit [GitHub Pages](https://jgzuo.github.io/snake/) to play instantly.
+Visit [GitHub Pages](https://jgzuo.github.io/Snake/) to play instantly.
 
 #### Run Locally
 ```bash
 # Clone repository
-git clone https://github.com/jgzuo/snake.git
+git clone https://github.com/jgzuo/Snake.git
 
 # Enter project directory
-cd snake
+cd Snake
 
 # Open index.html in browser
 ```
@@ -174,15 +174,15 @@ This project is licensed under the [MIT License](LICENSE).
 ### 🚀 快速开始
 
 #### 在线体验
-访问 [GitHub Pages](https://jgzuo.github.io/snake/) 即可立即游玩。
+访问 [GitHub Pages](https://jgzuo.github.io/Snake/) 即可立即游玩。
 
 #### 本地运行
 ```bash
 # 克隆仓库
-git clone https://github.com/jgzuo/snake.git
+git clone https://github.com/jgzuo/Snake.git
 
 # 进入项目目录
-cd snake
+cd Snake
 
 # 用浏览器打开 index.html
 ```
