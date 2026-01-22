@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Snake Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #535353;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #757575;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #535353;
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 2px solid #535353;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .feature-item {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-badge {
+            background: #535353;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 15px;
+            background: #535353;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #535353;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .mechanics-diagram {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .mechanics-diagram p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Snake Game</h1>
+        <p class="subtitle">贪吃蛇游戏 - About</p>
+
+        <div class="section">
+            <h2>📜 游戏背景</h2>
+            <p><strong>Snake Game（贪吃蛇）</strong> 是一款经典的街机游戏，最早在1976年的街机游戏《Blockade》中首次出现。这款游戏在1990年代随着诺基亚手机的普及而广为人知，成为一代人的共同回忆。</p>
+            <p>本项目使用纯HTML、CSS和JavaScript技术，完美复刻了这个经典游戏，特别之处在于实现了流畅的动画效果、渐进式难度系统和完整的音效系统。</p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 核心特性</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <p>流畅操控<br>Smooth Controls</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎵</div>
+                    <p>完整音效<br>Audio System</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <p>精美动画<br>Elegant Design</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <p>高分记录<br>High Score</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ 技术实现</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">HTML5 Canvas</span>
+                <span class="tech-badge">Vanilla JavaScript</span>
+                <span class="tech-badge">Web Audio API</span>
+                <span class="tech-badge">CSS3 Animations</span>
+                <span class="tech-badge">LocalStorage</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎮 游戏机制</h2>
+            <div class="mechanics-diagram">
+                <p><strong>网格移动：</strong>20x20网格系统，精确的位置控制</p>
+                <p><strong>食物生成：</strong>随机在网格空白处生成食物</p>
+                <p><strong>成长机制：</strong>每次进食，蛇身增长一节</p>
+                <p><strong>速度递增：</strong>每50分提升一级速度（150ms→50ms）</p>
+                <p><strong>碰撞检测：</strong>墙壁和自身碰撞都会导致游戏结束</p>
+                <p><strong>高分保存：</strong>使用localStorage永久保存最高分</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 项目数据</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value">600+</div>
+                    <div class="stat-label">代码行数<br>Lines</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">单文件<br>File</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">依赖项<br>Dependencies</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💡 设计理念</h2>
+            <p><strong>经典重现</strong>：保持原版游戏的核心玩法和挑战性</p>
+            <p><strong>极致简化</strong>：单文件实现，便于学习和修改</p>
+            <p><strong>性能优先</strong>：轻量级实现，秒级加载</p>
+            <p><strong>用户友好</strong>：支持键盘和触摸双重控制</p>
+        </div>
+
+        <div class="section">
+            <h2>🙏 致谢</h2>
+            <p>感谢经典街机游戏《Blockade》创造的传奇玩法</p>
+            <p>感谢诺基亚手机将这款游戏带给全球玩家</p>
+            <p>感谢开源社区的支持和贡献</p>
+        </div>
+
+        <a href="index.html" class="back-button">🔙 返回游戏<br>Back to Game</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 统计数字动画
+            const statValues = document.querySelectorAll('.stat-value');
+            statValues.forEach(stat => {
+                const target = parseInt(stat.textContent);
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        stat.textContent = target + '+';
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
+        });
+    </script>
+</body>
+</html>
